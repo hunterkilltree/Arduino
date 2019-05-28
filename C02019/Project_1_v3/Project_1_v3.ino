@@ -48,7 +48,7 @@ const int button = 4; // D2
 #define WIFI_SSID ************************"
 #define WIFI_PASSWORD "************************"
 
-// Phone 
+// Phone
 String SDT = "************************";
 float t; //temperaute
 float h; //humidity
@@ -109,8 +109,8 @@ void loop() {
   updateData();
 
   if (check_RC522() == true) {
-    lcd.backlight();   
-    send_message(); 
+    lcd.backlight();
+    send_message();
   }
 
   if (outdoor() == true) {
@@ -153,7 +153,7 @@ void setup_DHT() {
 void setup_LCD() {
   lcd.init();       //Khởi động màn hình. Bắt đầu cho phép Arduino sử dụng màn hình
   delay(100);
-  
+
   Wire.begin(sda_pin, scl_pin); // Wire.begin(SDA, SCL)
   delay(200);
 
@@ -235,9 +235,9 @@ void at(String _atcm, unsigned long _dl) {
 void send_message() {
 
   at("AT+CMGF=1",1000);
-  at("AT+CMGS=\"0338103740\"",2000);
+  at("AT+CMGS=\"SDT\"",2000);
   at("Someone open the door",1000);
-  sim808.write(26);    
+  sim808.write(26);
 }
 
 void updateData() {

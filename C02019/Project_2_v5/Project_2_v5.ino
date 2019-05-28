@@ -1,9 +1,9 @@
 /*
- * Reference : 
+ * Reference :
  * +  lib RFRC 522
  * +  lib DHT11
  * +  some source code from internet
- * Modify : LQT 
+ * Modify : LQT
  * +  project_version_3 source code
  */
 
@@ -521,7 +521,7 @@ void operateClientMenu() {
           case 4:
             menuItem5();
             break; */
-          case 3: 
+          case 3:
             menuItem8(); // log out
             break;
           default:
@@ -750,7 +750,7 @@ void menuItem2() {
   lcd.print("Uploading...");
 
   read_DHT();
-  
+
   Firebase.setFloat("Temperature", t);
   // handle error
   if (Firebase.failed()) {
@@ -773,7 +773,7 @@ void menuItem3() {
   lcd.print("Sending...");
 
   at("AT+CMGF=1", 100);
-  at("AT+CMGS=\"0338103740\"", 200);
+  at("AT+CMGS=\"SDT\"", 200);
   at("Call 113", 100);
   sim808.write(26);     // ctlrZ
 
@@ -864,23 +864,6 @@ void menuItem5() { // Delete Card
   }
 }
 
-
-void menuItem6() {
-  lcd.clear();
-  lcd.setCursor(3, 0);
-  lcd.print("Sub 6");
-
-  delay(5000);
-}
-
-
-void menuItem7() {
-  lcd.clear();
-  lcd.setCursor(3, 0);
-  lcd.print("Sub 7");
-
-  delay(5000);
-}
 
 void menuItem8() {
   lcd.clear();
