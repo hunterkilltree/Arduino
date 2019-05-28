@@ -40,27 +40,27 @@ Working like a smart room :
 
 ### PROJECT 2
 #### Short Description
-I will call this project name "Master and His Slavers":
-* Master have it own ID which is can not change
-    * He can watch the information of environment around, upload data to his own server, send message to call help.
-    * On the other hand, he has power to add many Slavers as he want to his system or delete them.
+Project name: Master and His Slaves
+* Master have his own unchangeable ID
+    * He can watch the information of the surrounding environment, upload the data to his server, and send message to call for help.
+    * Also, he has the ability to add many Slaves as he want to his system or delete them.
 
-* Slavers have to work for his master (if their ID already allow through master)
-    * They have 3 basic work that looking for the temperature around, upload the data to mater server so that he can what the temperature and humidity through his smartphone.
+* Slaves have to work for his master with their ID being allowed by the Master
+    * They have 3 basic works: look for the surrounding temperature, upload the data to Mater server so that he can observe the temperature and humidity via his smartphone.
     * ![smartphone](https://i.imgur.com/gJL56Bb.png)
     * They can send message if something go wrong.
 
 #### Instruction Manual:
-* At the beginning, people have 2 choice log in as Master or Slavers
+* At the beginning, people have 2 choice log in as Master or Slave
     * Press 1 to log in as Master => go to Master's menu
-    * Press 2 to log in as Slavers => go to Slavers' menu
+    * Press 2 to log in as Slave => go to Slave' menu
 * Menu :
     * Press 1 to go Up.
     * Press 2 to go Down.
     * Press 1 + 2 to enter the mode.
-* In mode "Display temperature and humidity" back to main menu press button 3.
+* In mode "Display temperature and humidity",press button 3 to get back to Main menu.
 
-* Note: When "Insert Card" is waiting to long (6 second) it will back to the previous menu.
+* Note: When "Insert Card" notification appears for too long (6 second), it will get back to the previous menu.
 
 
 
